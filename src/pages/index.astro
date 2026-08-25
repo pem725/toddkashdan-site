@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 <Layout title="Todd Kashdan | Curiosity, Purpose, and a More Interesting Life" current="home">
   <div class="hero hero-fullbleed">
-    <img class="hero-bg" src="/images/img_009.jpeg" alt="Todd Kashdan speaking on stage, presenting a new scientific framework of curiosity, mid-gesture with microphone" />
+    <img class="hero-bg" src={base + "images/img_009.jpeg"} alt="Todd Kashdan speaking on stage, presenting a new scientific framework of curiosity, mid-gesture with microphone" />
     <div class="hero-scrim"></div>
     <div class="hero-content">
       <p class="kicker">Psychologist &middot; Scientist &middot; Author &middot; Speaker</p>
@@ -12,7 +13,7 @@ import Layout from "../layouts/Layout.astro";
       <p class="credit">Among the top 1% most-cited scientists in the world. Awarded the <em>2013 Distinguished Early Career Researcher Award</em> by the American Psychological Association.</p>
       <div class="cta">
         <a class="btn solid" href="#quiz">Take the Curiosity Quiz</a>
-        <a class="btn ghost" href="/well-being-lab/">Explore the Well-Being Lab</a>
+        <a class="btn ghost" href={base + "well-being-lab/"}>Explore the Well-Being Lab</a>
       </div>
     </div>
   </div>
@@ -29,12 +30,12 @@ import Layout from "../layouts/Layout.astro";
       <span class="news-eyebrow">25 Years &middot; Free Research</span>
       <h3>Well-Being Lab</h3>
       <p>Todd founded the Well-Being Lab 25 years ago. Every year since, the lab has produced peer-reviewed research on curiosity, purpose, and psychological flexibility, and given it away for free. That body of work is cited more than 61,000 times on Google Scholar.</p>
-      <a href="/well-being-lab/">Read the science &rarr;</a>
+      <a href={base + "well-being-lab/"}>Read the science &rarr;</a>
     </div>
     <div class="panel" id="speaking">
       <h3>Speaking &amp; Consulting</h3>
       <p>Keynotes, workshops, and consulting on curiosity, purpose, and performance, for organizations and audiences that want more than a feel-good talk.</p>
-      <a href="/speaking/">Inquire about a speaking engagement &rarr;</a>
+      <a href={base + "speaking/"}>Inquire about a speaking engagement &rarr;</a>
     </div>
   </div>
 
@@ -57,13 +58,13 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   <div class="books-band wrap">
-    <div class="sec-h"><h2>Books</h2><a href="/books/">See all &rarr;</a></div>
+    <div class="sec-h"><h2>Books</h2><a href={base + "books/"}>See all &rarr;</a></div>
     <div class="grid3">
-      <div class="book"><img src="/images/img_010.webp" alt="The Art of Insubordination" /><div><h3>The Art of Insubordination</h3><p>How to dissent and defy effectively. &ldquo;The book all virtuous rebels need.&rdquo;</p><a class="book-buy" href="https://amzn.to/3Ta7SmW">Buy now &rarr;</a></div></div>
-      <div class="book"><img src="/images/img_011.webp" alt="The Upside of Your Dark Side" /><div><h3>The Upside of Your Dark Side</h3><p>Why being your whole self, not just your &quot;good&quot; self, drives success.</p><a class="book-buy" href="https://amzn.to/4wXOo3z">Buy now &rarr;</a></div></div>
-      <div class="book"><img src="/images/img_012.png" alt="Mindfulness, Acceptance, and Positive Psychology" /><div><h3>Mindfulness, Acceptance, and Positive Psychology</h3><p>The seven foundations of well-being.</p><a class="book-buy" href="https://amzn.to/4frOUj8">Buy now &rarr;</a></div></div>
-      <div class="book"><img src="/images/img_013.png" alt="Designing Positive Psychology" /><div><h3>Designing Positive Psychology</h3><p>Taking stock and moving forward, with Kennon Sheldon and Michael Steger.</p><a class="book-buy" href="https://amzn.to/4fJ8sAG">Buy now &rarr;</a></div></div>
-      <div class="book"><img src="/images/img_014.webp" alt="Curious?" /><div><h3>Curious?</h3><p>Discover the missing ingredient to a fulfilling life.</p><a class="book-buy" href="https://amzn.to/4wfAh9V">Buy now &rarr;</a></div></div>
+      <div class="book"><img src={base + "images/img_010.webp"} alt="The Art of Insubordination" /><div><h3>The Art of Insubordination</h3><p>How to dissent and defy effectively. &ldquo;The book all virtuous rebels need.&rdquo;</p><a class="book-buy" href="https://amzn.to/3Ta7SmW">Buy now &rarr;</a></div></div>
+      <div class="book"><img src={base + "images/img_011.webp"} alt="The Upside of Your Dark Side" /><div><h3>The Upside of Your Dark Side</h3><p>Why being your whole self, not just your &quot;good&quot; self, drives success.</p><a class="book-buy" href="https://amzn.to/4wXOo3z">Buy now &rarr;</a></div></div>
+      <div class="book"><img src={base + "images/img_012.png"} alt="Mindfulness, Acceptance, and Positive Psychology" /><div><h3>Mindfulness, Acceptance, and Positive Psychology</h3><p>The seven foundations of well-being.</p><a class="book-buy" href="https://amzn.to/4frOUj8">Buy now &rarr;</a></div></div>
+      <div class="book"><img src={base + "images/img_013.png"} alt="Designing Positive Psychology" /><div><h3>Designing Positive Psychology</h3><p>Taking stock and moving forward, with Kennon Sheldon and Michael Steger.</p><a class="book-buy" href="https://amzn.to/4fJ8sAG">Buy now &rarr;</a></div></div>
+      <div class="book"><img src={base + "images/img_014.webp"} alt="Curious?" /><div><h3>Curious?</h3><p>Discover the missing ingredient to a fulfilling life.</p><a class="book-buy" href="https://amzn.to/4wfAh9V">Buy now &rarr;</a></div></div>
     </div>
   </div>
 

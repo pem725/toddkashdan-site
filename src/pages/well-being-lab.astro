@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 <Layout title="The Well-Being Lab | Todd Kashdan" current="well-being-lab">
   <div class="wrap page-hero" style="display:grid; grid-template-columns:1.2fr .9fr; gap:44px; align-items:center;">
@@ -9,8 +10,8 @@ import Layout from "../layouts/Layout.astro";
       <p class="lead">The Well-Being Lab creates research for public consumption that directly applies to daily life and the workplace. Our focus: emotional agility, resilience after adversity, and the psychological factors that make well-being more likely, for individuals and society.</p>
     </div>
     <div>
-      <img src="/images/img_025.jpeg" alt="Purpose: a central, self-organizing life aim. Strength, Scope, and Awareness, by Drs. Todd Kashdan and Patrick McKnight" style="border-radius:10px; box-shadow:0 30px 70px rgba(0,0,0,.55);" />
-      <p style="font-size:13.5px; color:var(--bone); margin-top:12px; text-align:center;"><a href="/Kashdan-et-al-Purpose-AP.pdf" target="_blank" style="color:var(--gold); font-weight:700;">Get the articles on our purpose model &rarr;</a></p>
+      <img src={base + "images/img_025.jpeg"} alt="Purpose: a central, self-organizing life aim. Strength, Scope, and Awareness, by Drs. Todd Kashdan and Patrick McKnight" style="border-radius:10px; box-shadow:0 30px 70px rgba(0,0,0,.55);" />
+      <p style="font-size:13.5px; color:var(--bone); margin-top:12px; text-align:center;"><a href={base + "Kashdan-et-al-Purpose-AP.pdf"} target="_blank" style="color:var(--gold); font-weight:700;">Get the articles on our purpose model &rarr;</a></p>
     </div>
   </div>
 
@@ -71,7 +72,7 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   <div class="section wrap">
-    <img src="/images/img_026.jpeg" alt="The Five Dimensions of Curiosity: Joyous Exploration, Deprivation Sensitivity, Stress Tolerance, Social Curiosity, and Thrill Seeking. Sketchnote citing Kashdan et al. (2020), Personality and Individual Differences, 157:109836" style="border-radius:14px; max-width:480px; width:100%; display:block; margin:0 auto; box-shadow:0 20px 50px rgba(0,0,0,.4);" />
+    <img src={base + "images/img_026.jpeg"} alt="The Five Dimensions of Curiosity: Joyous Exploration, Deprivation Sensitivity, Stress Tolerance, Social Curiosity, and Thrill Seeking. Sketchnote citing Kashdan et al. (2020), Personality and Individual Differences, 157:109836" style="border-radius:14px; max-width:480px; width:100%; display:block; margin:0 auto; box-shadow:0 20px 50px rgba(0,0,0,.4);" />
   </div>
 
   <div class="section wrap">

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 <Layout title="Book Todd Kashdan to Speak" current="speaking">
   <div class="wrap page-hero" style="display:grid; grid-template-columns:.95fr 1.2fr; gap:44px; align-items:center;">
@@ -9,23 +10,23 @@ import Layout from "../layouts/Layout.astro";
       <p class="lead">For over 20 years, Todd and his Well-Being Lab have researched the conditions that lead to optimal psychological functioning in life, social relationships, and the workplace. He translates that science into entertaining, accessible, actionable content that inspires and delivers the results organizations seek.</p>
       <a class="btn solid" href="mailto:todd@toddkashdan.com">Invite Todd to Speak</a>
     </div>
-    <div><img src="/images/speaking-hero.webp" alt="Todd Kashdan speaking on stage at Tomorrow's Procurement Leader 2025 Americas, gesturing to the audience" style="width:100%; height:auto; border-radius:12px;" /></div>
+    <div><img src={base + "images/speaking-hero.webp"} alt="Todd Kashdan speaking on stage at Tomorrow's Procurement Leader 2025 Americas, gesturing to the audience" style="width:100%; height:auto; border-radius:12px;" /></div>
   </div>
 
   <div class="section logo-band wrap">
     <div class="sec-h"><h2>Organizations Todd has worked with includes</h2></div>
     <div class="logo-grid">
-      <div class="logo-chip"><img src="/images/img_027.png" alt="Mercedes-Benz" style="height:auto; max-height:88px;" /></div>
-      <div class="logo-chip"><img src="/images/img_028.png" alt="Microsoft" /></div>
-      <div class="logo-chip"><img src="/images/img_029.png" alt="American Express" /></div>
-      <div class="logo-chip"><img src="/images/img_030.png" alt="World Bank" /></div>
-      <div class="logo-chip"><img src="/images/img_031.png" alt="General Mills" /></div>
-      <div class="logo-chip"><img src="/images/img_032.png" alt="Merck" /></div>
-      <div class="logo-chip"><img src="/images/img_033.png" alt="Gap" /></div>
-      <div class="logo-chip"><img src="/images/img_034.png" alt="BBDO" /></div>
-      <div class="logo-chip"><img src="/images/img_035.png" alt="Prudential" /></div>
-      <div class="logo-chip"><img src="/images/img_036.png" alt="Gensler" /></div>
-      <div class="logo-chip"><img src="/images/standard-chartered.png" alt="Standard Chartered" style="height:auto; max-height:88px;" /></div>
+      <div class="logo-chip"><img src={base + "images/img_027.png"} alt="Mercedes-Benz" style="height:auto; max-height:88px;" /></div>
+      <div class="logo-chip"><img src={base + "images/img_028.png"} alt="Microsoft" /></div>
+      <div class="logo-chip"><img src={base + "images/img_029.png"} alt="American Express" /></div>
+      <div class="logo-chip"><img src={base + "images/img_030.png"} alt="World Bank" /></div>
+      <div class="logo-chip"><img src={base + "images/img_031.png"} alt="General Mills" /></div>
+      <div class="logo-chip"><img src={base + "images/img_032.png"} alt="Merck" /></div>
+      <div class="logo-chip"><img src={base + "images/img_033.png"} alt="Gap" /></div>
+      <div class="logo-chip"><img src={base + "images/img_034.png"} alt="BBDO" /></div>
+      <div class="logo-chip"><img src={base + "images/img_035.png"} alt="Prudential" /></div>
+      <div class="logo-chip"><img src={base + "images/img_036.png"} alt="Gensler" /></div>
+      <div class="logo-chip"><img src={base + "images/standard-chartered.png"} alt="Standard Chartered" style="height:auto; max-height:88px;" /></div>
     </div>
   </div>
 
@@ -80,7 +81,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="news-cta">
         <a class="btn solid" href="mailto:todd@toddkashdan.com">Email Todd</a>
-        <a class="btn ghost" href="/contact/">Contact page &rarr;</a>
+        <a class="btn ghost" href={base + "contact/"}>Contact page &rarr;</a>
       </div>
     </div>
   </div>

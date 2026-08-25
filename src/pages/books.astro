@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 <Layout title="Books by Todd Kashdan">
   <div class="wrap page-hero">
@@ -26,7 +27,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="sec-h"><h2>The backlist</h2></div>
 
     <div class="book">
-      <img src="/images/img_020.png" alt="The Art of Insubordination book cover" />
+      <img src={base + "images/img_020.png"} alt="The Art of Insubordination book cover" />
       <div>
         <h3>The Art of Insubordination</h3>
         <p class="subtitle">How to Dissent and Defy Effectively</p>
@@ -36,7 +37,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="book">
-      <img src="/images/img_021.jpeg" alt="The Upside of Your Dark Side book cover" />
+      <img src={base + "images/img_021.jpeg"} alt="The Upside of Your Dark Side book cover" />
       <div>
         <h3>The Upside of Your Dark Side</h3>
         <p class="subtitle">Why Being Your Whole Self, Not Just Your "Good" Self, Drives Success and Fulfillment</p>
@@ -46,7 +47,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="book">
-      <img src="/images/img_022.png" alt="Curious? book cover" />
+      <img src={base + "images/img_022.png"} alt="Curious? book cover" />
       <div>
         <h3>Curious?</h3>
         <p class="subtitle">Discover the Missing Ingredient to a Fulfilling Life</p>
@@ -56,7 +57,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="book">
-      <img src="/images/img_023.png" alt="Designing Positive Psychology book cover" />
+      <img src={base + "images/img_023.png"} alt="Designing Positive Psychology book cover" />
       <div>
         <h3>Designing Positive Psychology</h3>
         <p class="subtitle">Taking Stock and Moving Forward</p>
@@ -66,7 +67,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="book">
-      <img src="/images/img_024.png" alt="Mindfulness, Acceptance, and Positive Psychology book cover" />
+      <img src={base + "images/img_024.png"} alt="Mindfulness, Acceptance, and Positive Psychology book cover" />
       <div>
         <h3>Mindfulness, Acceptance, and Positive Psychology</h3>
         <p class="subtitle">The Seven Foundations of Well-Being</p>
@@ -84,7 +85,7 @@ import Layout from "../layouts/Layout.astro";
         <p>Todd's Substack newsletter takes an unusual look at commonly accepted practices and ideas, read by over 5 million people.</p>
       </div>
       <div class="news-cta">
-        <a class="btn solid" href="/provoked/">Read Provoked</a>
+        <a class="btn solid" href={base + "provoked/"}>Read Provoked</a>
       </div>
     </div>
   </div>
