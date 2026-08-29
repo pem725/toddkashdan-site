@@ -27,7 +27,7 @@ a { text-decoration: none; color: inherit; }
 .nav a.current { color:var(--bone); border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
 
 .page-hero { padding:20px 46px 40px; }
-.kicker { font-size:clamp(14px,1.6vw,16px); letter-spacing:.08em; text-transform:uppercase; color:var(--coral); font-weight:700; margin:0 0 18px; }
+.kicker { font-size:clamp(15px,1.8vw,18px); letter-spacing:.1em; text-transform:uppercase; color:var(--gold); font-weight:800; margin:0 0 20px; }
 .page-hero h1 {
   font-size:clamp(34px,5.4vw,64px); line-height:1.02; letter-spacing:-.03em; font-weight:800;
   margin:0 0 22px; text-wrap:balance; max-width:20ch;
@@ -161,6 +161,16 @@ a { text-decoration: none; color: inherit; }
 .credit { font-size:13.5px; color:var(--bone); line-height:1.6; max-width:50ch; margin:0 0 30px; }
 .credit em { color:var(--bone); font-style:normal; font-weight:600; }
 .cta { display:inline-flex; gap:14px; flex-wrap:wrap; }
+
+.press-marquee { border-top:1px solid rgba(242,235,221,.14); padding:20px 0; overflow:hidden; position:relative; }
+.press-marquee::before, .press-marquee::after { content:''; position:absolute; top:0; bottom:0; width:70px; z-index:2; pointer-events:none; }
+.press-marquee::before { left:0; background:linear-gradient(90deg, var(--ground), rgba(27,18,32,0)); }
+.press-marquee::after { right:0; background:linear-gradient(270deg, var(--ground), rgba(27,18,32,0)); }
+.press-marquee-track { display:flex; width:max-content; gap:52px; animation:press-marquee-scroll 42s linear infinite; }
+.press-marquee-track span { font-size:14px; font-weight:700; letter-spacing:.05em; color:var(--dim); white-space:nowrap; text-transform:uppercase; }
+@keyframes press-marquee-scroll { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+.press-marquee:hover .press-marquee-track { animation-play-state:paused; }
+@media (prefers-reduced-motion: reduce) { .press-marquee-track { animation:none; } }
 
 .press { border-top:1px solid rgba(242,235,221,.14); padding:44px 46px 10px; }
 .press-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
