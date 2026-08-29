@@ -98,7 +98,7 @@ a { text-decoration: none; color: inherit; }
 
 .quote { padding: 28px 32px; border-left: 3px solid var(--gold); background: rgba(242,235,221,.05); border-radius: 0 12px 12px 0; margin-bottom: 22px; }
 .quote p { font-size: 17px; font-style: italic; line-height: 1.55; margin: 0 0 12px; color: var(--bone); }
-.quote cite { font-size: 13.5px; color: var(--coral); font-style: normal; font-weight: 700; }
+.quote cite { font-size: 13px; color: var(--gold); font-style: normal; font-weight: 800; letter-spacing: .04em; }
 
 .topic-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
 .topic-list li {
@@ -106,8 +106,9 @@ a { text-decoration: none; color: inherit; }
   border-radius: 12px; font-size: 15px; line-height: 1.5; color: var(--bone);
 }
 
-.logo-band { background: var(--bone); border-top: none; border-radius: 20px; margin-top: 44px; }
-.logo-band .sec-h h2 { color: var(--ground); }
+.logo-band { background: var(--bone); border-top: none; border-radius: 20px; margin-top: 30px; padding: 28px 40px; }
+.logo-band .sec-h h2 { color: var(--ground); margin-bottom: 6px; }
+.logo-band .sec-h { margin-bottom: 18px; }
 .logo-grid { display:grid; grid-template-columns:repeat(6, 1fr); gap:44px; align-items:center; }
 .logo-grid .logo-chip { display: flex; align-items: center; justify-content: center; opacity: .85; transition: opacity .15s; }
 .logo-grid .logo-chip:hover { opacity: 1; }
