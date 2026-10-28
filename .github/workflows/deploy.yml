@@ -19,16 +19,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
+      - name: Assemble site
+        run: |
+          mkdir _deploy
+          rsync -a --exclude '_src/' --exclude '_parts/' --exclude '_build.ps1' site/ _deploy/
+          rsync -a redirects/ _deploy/
+          cp CNAME _deploy/CNAME
+          touch _deploy/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./_deploy
 
   deploy:
     needs: build
