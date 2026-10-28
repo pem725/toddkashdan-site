@@ -490,3 +490,16 @@ h2{font-size:clamp(30px,3.4vw,44px)}
   .pfeat-logo img{height:20px}
   .pfeat b{font-size:20px}
 }
+/* Speaking page: all client logos at once, full color, sharp vector files (10/28) */
+.client-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.client-grid li{display:grid;place-items:center;height:110px;padding:18px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white)}
+.client-grid img{height:34px;width:auto;max-width:100%;object-fit:contain}
+.client-grid .cg-amex img,.client-grid .cg-gap img{height:54px}
+.client-grid .cg-lululemon img{height:50px}
+.client-grid .cg-bbdo img{height:28px}
+.client-grid .cg-standardchartered img,.client-grid .cg-generalmills img{height:46px}
+.client-grid .cg-merck img{height:30px}
+.client-grid .cg-gensler img{height:26px}
+.client-grid .cg-mercedes img{height:40px}
+@media (max-width:1020px){.client-grid{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:640px){.client-grid{grid-template-columns:repeat(3,1fr)}.client-grid li{height:78px;padding:10px}.client-grid img{height:22px}.client-grid .cg-amex img,.client-grid .cg-gap img,.client-grid .cg-lululemon img{height:38px}.client-grid .cg-standardchartered img,.client-grid .cg-generalmills img{height:32px}.client-grid .cg-bbdo img{height:18px}.client-grid .cg-merck img{height:20px}}
