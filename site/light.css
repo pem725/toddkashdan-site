@@ -463,3 +463,12 @@ h2{font-size:clamp(30px,3.4vw,44px)}
 .finding{padding-bottom:36px}
 .finding + section{padding-top:36px}
 @media (min-width:641px){.posts.two{grid-template-columns:repeat(2,1fr)}}
+/* Home page Provoked cards: shorter images; thumbnail beside text on phones (10/28) */
+.posts.two .post img{aspect-ratio:16/9}
+@media (max-width:640px){
+  .posts.two{gap:18px}
+  .posts.two .post{display:grid;grid-template-columns:112px 1fr;gap:14px;align-items:start;padding-top:12px}
+  .posts.two .post img{aspect-ratio:1/1;width:112px}
+  .posts.two .post div{padding:0}
+  .posts.two .post h3{font-size:16.5px}
+}
