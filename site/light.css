@@ -458,3 +458,7 @@ h2{font-size:clamp(30px,3.4vw,44px)}
 
 /* round 3 (10/28): oxblood */
 :root{--accent:#6E1F2A;--accent-dark:#55161F;--accent-soft:#F3E8E9}
+
+/* Tighter gap between the study chart and the Provoked posts (10/28) */
+.finding{padding-bottom:36px}
+.finding + section{padding-top:36px}
