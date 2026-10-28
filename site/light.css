@@ -505,3 +505,13 @@ h2{font-size:clamp(30px,3.4vw,44px)}
 @media (max-width:640px){.client-grid{grid-template-columns:repeat(3,1fr)}.client-grid li{height:78px;padding:10px}.client-grid img{height:22px}.client-grid .cg-amex img,.client-grid .cg-gap img,.client-grid .cg-lululemon img{height:38px}.client-grid .cg-standardchartered img,.client-grid .cg-generalmills img{height:32px}.client-grid .cg-bbdo img{height:18px}.client-grid .cg-merck img{height:20px}}
 /* Remove the double rule above the menu (10/28) */
 .site-head{border-top:0}
+/* News & Media: outlets in full strength, bigger, so the names do the work (10/28) */
+.plogo{height:46px}
+.plogo img{height:30px;max-width:230px;filter:none;opacity:1;mix-blend-mode:normal}
+.plogo img.mark{height:40px}
+.plogo img.sq{height:44px}
+.plogo img.inv{opacity:1;height:36px}
+.plogo.txt{font-size:22px;font-weight:700;color:var(--ink)}
+.plogo-name{color:var(--ink);font-weight:700}
+.pfeat-logo img{filter:none;opacity:1;mix-blend-mode:normal;height:32px}
+@media (max-width:680px){.plogo img{height:26px}.plogo img.mark{height:34px}.pfeat-logo img{height:24px}}
