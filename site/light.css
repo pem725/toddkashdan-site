@@ -462,3 +462,4 @@ h2{font-size:clamp(30px,3.4vw,44px)}
 /* Tighter gap between the study chart and the Provoked posts (10/28) */
 .finding{padding-bottom:36px}
 .finding + section{padding-top:36px}
+@media (min-width:641px){.posts.two{grid-template-columns:repeat(2,1fr)}}
