@@ -515,3 +515,6 @@ h2{font-size:clamp(30px,3.4vw,44px)}
 .plogo-name{color:var(--ink);font-weight:700}
 .pfeat-logo img{filter:none;opacity:1;mix-blend-mode:normal;height:32px}
 @media (max-width:680px){.plogo img{height:26px}.plogo img.mark{height:34px}.pfeat-logo img{height:24px}}
+
+/* 10/30: warmer newsprint background (agency note), newspaper look kept */
+:root{--paper:#FAF6EE;--sand:#F1EBDF;--sky:#F1EBDF;--line:#D9D3C7}
