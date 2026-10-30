@@ -518,3 +518,8 @@ h2{font-size:clamp(30px,3.4vw,44px)}
 
 /* 10/30: warmer newsprint background (agency note), newspaper look kept */
 :root{--paper:#FAF6EE;--sand:#F1EBDF;--sky:#F1EBDF;--line:#D9D3C7}
+
+/* 10/30: silent looping hero video; phones and reduced-motion get the still */
+.front figure video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 40%;background:#111}
+.front figure .hero-still{display:none}
+@media (max-width:640px),(prefers-reduced-motion:reduce){.front figure video{display:none}.front figure .hero-still{display:block}}
